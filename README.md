@@ -31,6 +31,6 @@ git checkout -b project-branch
 ```bash
 git add .
 git commit -am "submission commit for <projectname>"
-git push -u origin master
+git push -u origin <your-project-name>-branch
 ```
 6. Go to your fork and click `Create pull request`, you're done!
