@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+     <link rel="stylesheet" type="text/css" href="TruConduct.css"/>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+     <script type="text/javascript" src="TruConduct.js"></script>
+ </head>
+    <body>
+
+  <header>
+    <div class="wrap">
+      <h1 id="titleName">TruConduct</h1>
+      <h2 id="menuBar">  <A href = "index.html" > Home </A> | <A href = "Orgin.html" > Idea </A> | <A href = "Rules.html" > Rules </A> </h2>
+    </div>
+  </header>
+
+<p class="question">1.
+You are walking to your first class, and you see a giant mob of people yelling
+“Save the squirrels!” and obstructing the vehicular flow of traffic. Your best
+friend beckons you from the crowd. You have 20 minutes before your first class.
+Do you join in?</p>
+
+<ul class="answers">
+<input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Yes</label><br/>
+<input type="radio" name="q1" value="b" id="q1b"><label for="q1b">No</label><br/>
+</ul>
+
+
+<p class="question">2. You join an organization that does philanthropy. They
+  decide to throw a concert and charge everyone $5. For the grand finale, they
+  want to display a firework show. They ask for your advice. Do you guys do it?
+</p>
+
+<ul class="answers">
+<input type="radio" name="q2" value="a" id="q2a"><label for="q2a">Yes</label><br/>
+<input type="radio" name="q2" value="b" id="q2b"><label for="q2b">No</label><br/>
+</ul>
+
+<p class="question">3. You go to back to your dorm. Your roommate has decided
+  that they absolutely hate it here, and created a flyer to let
+  everyone know that. On the flyer, there is obscene language. She asks you to
+  help her distribute the flyers. Do you turn her down?  </p>
+
+<ul class="answers">
+<input type="radio" name="q3" value="a" id="q3a"><label for="q3a">Yes</label><br/>
+<input type="radio" name="q3" value="b" id="q3b"><label for="q3b">No</label><br/>
+</ul>
+
+<p class="question">4. After your first class, you see a few students yelling
+  and running around, and you don’t know why. You could work on your Chem
+  project, but you don't really want to do homework. Do you join them?  </p>
+
+<ul class="answers">
+<input type="radio" name="q4" value="a" id="q4a"><label for="q4a">Yes</label><br/>
+<input type="radio" name="q4" value="b" id="q4b"><label for="q4b">No</label><br/>
+</ul>
+
+<p class="question">5. Your friend is so sick that she can’t get out of bed. She
+  needs to turn in an essay today; her professor won’t take it late. She gives
+   you her login to print out the paper and turn it in for her. Do you do it?
+ </p>
+
+<ul class="answers">
+<input type="radio" name="q5" value="a" id="q5a"><label for="q5a">Yes</label><br/>
+<input type="radio" name="q5" value="b" id="q5b"><label for="q5b">No</label><br/>
+</ul>
+
+<p class="question">6. Being a broke college student, your best friend decided
+  to make a raffle to raise money to pay for food. You're not so rich yourself.
+  Do you participate?</p>
+
+<ul class="answers">
+<input type="radio" name="q6" value="a" id="q6a"><label for="q6a">Yes</label><br/>
+<input type="radio" name="q6" value="b" id="q6b"><label for="q6b">No</label><br/>
+</ul>
+
+<p class="question">7. Your friend gives you a code to a computer lab on campus,
+   a professor sees you in there. He comes in, and he asks for your ID. Do you
+   give him your ID? </p>
+
+<ul class="answers">
+<input type="radio" name="q7" value="a" id="q7a"><label for="q7a">Yes</label><br/>
+<input type="radio" name="q7" value="b" id="q7b"><label for="q7b">No</label><br/>
+</ul>
+
+<p class="question">8. Your roommate wants to throw a party in your dorm room
+  this weekend. It is promised that there will be no drinking, no drugs, just
+  loud music and tons of people. Do you agree?</p>
+
+<ul class="answers">
+<input type="radio" name="q8" value="a" id="q8a"><label for="q8a">Yes</label><br/>
+<input type="radio" name="q8" value="b" id="q8b"><label for="q8b">No</label><br/>
+</ul>
+
+<p class="question">9. In your computer science class, a classmate asks for help
+  in causing the university’s system to crash. Do you report it?</p>
+
+<ul class="answers">
+<input type="radio" name="q9" value="a" id="q9a"><label for="q9a">Yes</label><br/>
+<input type="radio" name="q9" value="b" id="q9b"><label for="q9b">No</label><br/>
+</ul>
+
+<p class="question">10. Your roommate is still sick. She wants to get food from
+   the convenience store downstairs, but she can’t get out of bed. She hands you
+    her ID to use downstairs and asks you to grab chicken noodle soup. Do you do
+     it? </p>
+
+<ul class="answers">
+<input type="radio" name="q10" value="a" id="q10a"><label for="q10a">Yes</label><br/>
+<input type="radio" name="q10" value="b" id="q10b"><label for="q10b">No</label><br/>
+</ul>
+
+<br/>
+
+<button id="results">
+Click to see your results!
+</button>
+
+<div id="categorylist">
+
+</div>
+
+<div id="category1">
+<p>
+<strong>Question 1 - The correct answer is NO: </strong>
+<br/>Because you joined in on the giant mob of squirrel enthusiasts and began
+screaming about the rights of the squirrels, you unknowingly violated the code
+ of conduct by obstructing traffic.  </p>
+</div>
+
+<div id="category2">
+<p>
+<strong>Question 2 - The correct answer is NO:</strong><br/>
+By lighting the fireworks, you broke a rule in the Code of Conduct stating that
+the possession or use of fireworks, incendiary devices, or dangerous explosives
+is prohibited.</p>
+</div>
+
+<div id="category3">
+<p>
+<strong>Question 3 - The correct answer is YES: </strong>
+<br/> Your roommate and you get caught distributing the flyers. You broke a
+rule in the Code of Conduct: “Origination or circulation of any advertising
+media containing (a) false information, (b) misleading information, (c) obscene
+language, (d) patently offensive material, (e) the promotion of alcohol
+consumption, or (f) illegal activities/behavior is prohibited.” </p>
+</div>
+
+<div id="category4">
+<p>
+<strong>Question 4 - The correct answer is NO: </strong>
+<br/> Because you started running and yelling with the students, you broke a
+ Code of Conduct rule; you were displaying lewd and disorderly behavior.</p>
+</div>
+
+<div id="category5">
+<p>
+<strong>Question 5 - The correct answer is NO: </strong>
+<br/> By
+  using her login to help turn in an essay, you broke a rule: “Use of another
+  individual’s (a) identification; (b) network, email or other university based
+   account; and/or (c) related passwords.”</p>
+</div>
+
+<div id="category6">
+<p>
+<strong>Question 6 - The correct answer is NO: </strong>
+<br/> By using the raffle to pay for food, you are breaking a rule in the Code
+of Conduct: You are forbidden to "play or sponsor an unlawful game of
+ chance for money or for anything of value (e.g a raffle) (a) on University
+ premises or (b) at a University or student organization sponsored activity or
+ event." </p>
+</div>
+
+<div id="category7">
+<p>
+<strong>Question 7 - The correct answer is YES: </strong>
+<br/> By not giving your ID to the professor, you broke a rule in the Code of
+Conduct: “a student is required to produce his/her University ID card upon the
+request of an official or law enforcement officer”.</p>
+</div>
+
+<div id="category8">
+<p>
+<strong>Question 8 - The correct answer is NO: </strong>
+<br/> By throwing the party, you are disturbing the peace and making it so
+everyone around you cannot sleep. This violates the student Code of Conduct.</p>
+</div>
+
+<div id="category9">
+<p>
+<strong>Question 9 - The correct answer is YES: </strong>
+<br/> Your professor stopped the two of you just in time before you and your
+ classmate crash the university system, but you broke a rule in the code of
+ conduct. </p>
+</div>
+
+<div id="category10">
+<p>
+<strong>Question 10 - The correct answer is NO: </strong>
+<br/> When you went downstairs to the convenience store, the cashier notices
+that the picture on the ID is not a picture of you. You have broken a rule in
+the Code of Conduct:  “Use of another individual’s (a) identification; (b)
+network, email or other university based account; and/or (c) related passwords
+is prohibited.”
+</p>
+</div>
+
+<div id="category11">
+<p>
+You answered them all right!</p>
+</div>
+
+
+</body>
+</html>
