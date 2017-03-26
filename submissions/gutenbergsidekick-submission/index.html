@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project Gutenberg Sidekick</title>
+
+  <link rel="icon"
+      type="image/ico"
+      href="favicon.ico">
+
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed" rel="stylesheet">
+
+  <script src="https://use.fontawesome.com/6dad3bd5b1.js"></script>
+
+  <script src="node_modules/socket.io/node_modules/socket.io-client/dist/socket.io.js"></script>
+
+  <script src="js/spin.min.js"></script>
+
+</head>
+
+
+<body>
+
+    <div class="jumbotron">
+        <h1 class="text-center">Project Gutenberg Sidekick <i class="fa fa-book"></i></h1>
+        <p class="text-center">Find and keep track of the terms in any <a href="gutenberg.org">Project Gutenberg</a> book.</p>
+    </div>
+
+    <div class="container-fluid">
+
+
+        <div class="row">
+            <div class="col-md-2">
+            </div>
+
+            <div class="col-xs-12 col-md-8" id="maincontent">
+                <!-- content -->
+                <div class="alert alert-danger" id="wrong-url">
+                  <strong> Incorrect URL format - Please enter plain text URL! </strong>
+                </div>
+
+                <div id="searchbar">
+                    <h3>Enter a Project Gutenberg book:</h3>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control center-block" id="bookid" placeholder="Book URL">
+                            <button class="btn btn-primary center-block" id="submitbutton">Submit</button><br>
+
+                            <label> Select number of results </label>
+                              <select id='result_selector'>
+                                 <option value=25 selected='selected'> </option>
+                                 <option value=25> 25 results </option>
+                                 <option value=35>  35 results </option>
+                                 <option value=45> 45 results </option>
+                                 <option value=55> 55 results </option>
+                                 <option value=65> All results </option>
+                             </select><br>
+
+                            <label> Proper Nouns Frequency </label>
+                              <select id='frequency_selector'>
+                                 <option value=0 selected='selected'> </option>
+                                 <option value=10> 10 times </option>
+                                 <option value=20> 20 times </option>
+                                 <option value=30> 30 times </option>
+                                 <option value=40> 40 times </option>
+                                 <option value=50> 50 times </option>
+                               </select>
+                        </div>
+                    </form>
+
+                </div>
+
+
+
+
+
+            </div>
+
+
+
+            <div class="col-md-1">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-1">
+            </div>
+
+            <div class="col-md-7 col-xs-12">
+                <div id="searchresults">
+
+                    <h2>Results</h2>
+                    <h3 id='book-title'><strong></strong></h3>
+
+                    <div id="loadscreen">
+                        <p class="text-center">Analyzing...</p>
+                    </div>
+
+                    <div id="resultsoutput">
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="col-md-4 col-xs-12">
+                <div class="panel panel-primary class-basket">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Whiteboard</h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul class="list-group" id="basket-content">
+                        </ul>
+                        <button type="button" class="btn btn-primary pull-left" id="submitbasket">Export</button>
+                        <button type="button" class="btn btn-primary pull-right" id="clrBasket">Clear</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Made by Khoa Le, Minghao Shan, Andrew Stratmann, and Callie Warren for hackTruman 2017</p>
+        </div>
+    </footer>
+
+    <!-- Nothing should go here -->
+
+
+<script src="jquery-3.2.0.min.js"></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.debug.js"></script>
+
+<script>
+    var socket = io.connect();
+</script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

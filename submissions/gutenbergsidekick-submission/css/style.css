@@ -1,0 +1,46 @@
+* {
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+body {
+    background-color: #F5F5F5;
+    color: #0F1626;
+}
+
+p {
+
+}
+
+.jumbotron {
+    background-color:#AB987A !important;
+}
+
+.well {
+
+}
+
+.btn {
+    margin-top: 4%;
+}
+
+#bookid{
+    width: 70%;
+    margin-top: 5%;
+}
+
+#searchresults {
+    display: none;
+}
+
+#wbtext {
+    width: 100%;
+
+}
+
+.class-basket {
+    margin-top: 10%;
+}
+
+#loadscreen {
+    display: none;
+}
